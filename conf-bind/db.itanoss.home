@@ -1,0 +1,14 @@
+$TTL    604800
+@       IN      SOA     ns.itanoss.home. root.itanoss.home. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      ns.itanoss.home.
+ns      IN      A       192.168.0.13
+www     IN      A       192.168.0.13
+ 
+;also list other computers
+dev     IN      A       192.168.0.6
