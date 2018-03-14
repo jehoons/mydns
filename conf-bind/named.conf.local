@@ -12,7 +12,7 @@ zone "0.168.192.in-addr.arpa" {
         file "/etc/bind/db.0.168.192";
 };
 
-zone "itanoss.home" {
+zone "standigm.home" {
      type master;
-     file "/etc/bind/db.itanoss.home";
+     file "/etc/bind/db.standigm.home";
 };

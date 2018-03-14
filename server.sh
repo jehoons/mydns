@@ -1,9 +1,8 @@
 #!/bin/bash 
 STANDB_IMG="mydns"
 CONTAINER="hello_MyDNS"
-PORT_MAPS="--publish=53:53" 
+PORT_MAPS="--publish=53:53/udp" 
 VOLUME_MAPS="--volume=`pwd`/share:/root/share" 
-
 build() { 
     docker build . -t ${STANDB_IMG}
 }
@@ -16,6 +15,7 @@ shell() {
 }
 stop() {
 	docker stop ${CONTAINER} 
+	sleep 5
 } 
 case "$1" in
     shell)

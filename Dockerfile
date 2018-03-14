@@ -16,7 +16,7 @@ RUN locale-gen en_US.UTF-8
 
 COPY conf-bind/* /etc/bind/
 COPY entrypoint.sh /entrypoint.sh 
-COPY resolv.conf /etc
+# COPY resolv.conf /etc
 
 EXPOSE 53
 
