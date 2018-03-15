@@ -12,6 +12,12 @@ zone "0.168.192.in-addr.arpa" {
         file "/etc/bind/db.0.168.192";
 };
 
+zone "1.168.192.in-addr.arpa" {
+        type master;
+        notify no;
+        file "/etc/bind/db.1.168.192";
+};
+
 zone "standigm.home" {
      type master;
      file "/etc/bind/db.standigm.home";

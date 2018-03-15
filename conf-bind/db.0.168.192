@@ -14,3 +14,4 @@ $TTL	10
 ; also list other computers
 89	IN	PTR	standb-nas.standigm.home.
 90	IN	PTR	atlas.standigm.home.
+97	IN	PTR	nas.standigm.home.
