@@ -1,14 +1,16 @@
-$TTL    604800
-@       IN      SOA     ns.standigm.home. root.standigm.home. (
+;$TTL	604800
+$TTL	10
+@	IN	SOA	ns.standigm.home.	root.standigm.home.	(
                               2         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-@       IN      NS      ns.
-89       IN      PTR     ns.standigm.home.
-89       IN      PTR     www.standigm.home.
+@	IN	NS	ns.
+89	IN	PTR	ns.standigm.home.
+89	IN	PTR	www.standigm.home.
  
 ; also list other computers
-6      IN      PTR     dev.standigm.home.
+89	IN	PTR	standb-nas.standigm.home.
+90	IN	PTR	atlas.standigm.home.

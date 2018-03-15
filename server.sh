@@ -39,6 +39,13 @@ case "$1" in
         wait 
         start $2
         ;; 
+    update)
+        echo "wait stoping ..."
+        stop 
+		build $2
+        start $2
+        ;; 
+
     *)
         echo 'hahahello'
    
